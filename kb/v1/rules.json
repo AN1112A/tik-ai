@@ -1,0 +1,22 @@
+{
+  "routing": {
+    "ceilings": {
+      "prefer": "Anti-Reflex White [2]",
+      "hint": "Use on ceilings/critical light to minimise roller marks."
+    },
+    "bathrooms": {
+      "preferRange": "Luja",
+      "hint": "Moisture + mould resistance for humid rooms."
+    }
+  },
+  "tieBreakers": [
+    "Prefer washable/scrub-class paints (e.g., Optiva) over Vinyl when durability is requested.",
+    "Prefer water-based enamels (Helmi/Everal Aqua) for interior trim unless solvent-based specifically required."
+  ],
+  "defaults": {
+    "coats": 2,
+    "assumePrimerWhenBare": true,
+    "minTempC": 5,
+    "maxRH": 80
+  }
+}

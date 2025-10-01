@@ -1,0 +1,12 @@
+{
+  "dataset": "tikkurila-kb",
+  "version": "2025-09-30",
+  "chunks": [
+    "products/interior.json",
+    "products/exterior.json",
+    "products/primers.json",
+    "products/specialist.json"
+  ],
+  "productIndex": [],
+  "faqsIndex": []
+}

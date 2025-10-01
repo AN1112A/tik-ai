@@ -1,0 +1,22 @@
+{
+  "faqs": [
+    {
+      "intent": "which-paint-for-ceiling",
+      "question": "What do I use on ceilings to hide roller marks?",
+      "answer": "Use Anti-Reflex White [2] for ultra‑matt, light‑diffusing ceilings that minimise roller marks.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/anti-reflex-white-2"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "bathroom-paint",
+      "question": "What should I use in a bathroom?",
+      "answer": "Use the Luja system (Luja Universal Primer + Luja topcoat) for moisture and mould resistance.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/luja-20"
+      },
+      "lastUpdated": "2025-09-30"
+    }
+  ]
+}

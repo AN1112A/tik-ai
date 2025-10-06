@@ -1,3 +1,113 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "pika-teho",
+      "name": "Pika-Teho",
+      "description": "Premium exterior wood paint with excellent weather resistance",
+      "category": "exterior",
+      "subCategory": "wood",
+      "rooms": ["exterior"],
+      "surfaces": ["wood", "timber", "cladding", "fences", "sheds"],
+      "features": [
+        "water-based",
+        "weather resistant",
+        "UV protection",
+        "breathable",
+        "long-lasting colour"
+      ],
+      "finish": "semi-matt",
+      "coverage": "8-10 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/pika-teho",
+      "price": "From £58"
+    },
+    {
+      "id": "vinha",
+      "name": "Vinha",
+      "description": "Exterior wood paint for untreated or previously painted wood",
+      "category": "exterior",
+      "subCategory": "wood",
+      "rooms": ["exterior"],
+      "surfaces": ["wood", "cladding", "fences", "timber"],
+      "features": [
+        "semi-matt finish",
+        "weather resistant",
+        "good coverage",
+        "durable"
+      ],
+      "finish": "semi-matt",
+      "coverage": "8-10 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/vinha",
+      "price": "From £48"
+    },
+    {
+      "id": "euro-12",
+      "name": "Euro 12",
+      "description": "Premium masonry paint for walls and render",
+      "category": "exterior",
+      "subCategory": "masonry",
+      "rooms": ["exterior"],
+      "surfaces": ["masonry", "render", "concrete", "brick"],
+      "features": [
+        "water-based",
+        "highly durable",
+        "weather resistant",
+        "breathable",
+        "anti-fungal"
+      ],
+      "finish": "matt",
+      "coverage": "5-7 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/euro-12",
+      "price": "From £62"
+    },
+    {
+      "id": "facade-silicon",
+      "name": "Facade Silicon",
+      "description": "Silicone-based masonry paint with self-cleaning properties",
+      "category": "exterior",
+      "subCategory": "masonry",
+      "rooms": ["exterior"],
+      "surfaces": ["masonry", "render", "concrete"],
+      "features": [
+        "self-cleaning",
+        "highly water-repellent",
+        "breathable",
+        "UV resistant",
+        "long-lasting"
+      ],
+      "finish": "matt",
+      "coverage": "5-7 m²/L",
+      "coats": 2,
+      "dryingTime": "6-8 hours",
+      "link": "https://www.tikkurila.co.uk/facade-silicon",
+      "price": "From £75"
+    },
+    {
+      "id": "teho-oil",
+      "name": "Teho Oil",
+      "description": "Exterior wood oil for decking and horizontal surfaces",
+      "category": "exterior",
+      "subCategory": "wood",
+      "rooms": ["exterior"],
+      "surfaces": ["decking", "timber", "wood"],
+      "features": [
+        "penetrating oil",
+        "water-repellent",
+        "UV protection",
+        "enhances wood grain",
+        "non-film forming"
+      ],
+      "finish": "natural",
+      "coverage": "4-6 m²/L",
+      "coats": 2,
+      "dryingTime": "24 hours",
+      "link": "https://www.tikkurila.co.uk/teho-oil",
+      "price": "From £42"
+    }
+  ]
 }

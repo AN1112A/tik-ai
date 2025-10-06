@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Styling - Tikkurila Chatbot</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    h1, h2 {
+      color: white;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      overflow-x: auto;
+      color: #e0e0e0;
+    }
+    .code-block pre {
+      margin: 0;
+    }
+    .demo-section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border-left: 4px solid white;
+    }
+    button {
+      background: white;
+      color: #667eea;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      font-weight: 600;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .color-demo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .color-box {
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .color-box:hover {
+      transform: scale(1.05);
+    }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    /* Custom chatbot styling override */
+    .tikkurila-chatbot-container {
+      --primary-color: #667eea !important;
+      --accent-color: #764ba2 !important;
+      --border-radius: 16px !important;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Tikkurila Chatbot - Custom Styling</h1>
+  
+  <p>Learn how to customize the chatbot's appearance to match your brand perfectly.</p>
+
+  <h2>🎨 Color Customization</h2>
+  <p>The easiest way to customize is through the configuration:</p>
+
+  <div class="code-block">
+    <pre>const chatbot = new TikkurilaChatbot({
+  baseUrl: window.location.origin,
+  
+  // Brand Colors
+  primaryColor: '#667eea', // Main color for buttons, header
+  accentColor: '#764ba2', // Hover states, gradients
+  
+  // Position
+  position: 'bottom-right' // or 'bottom-left'
+});</pre>
+  </div>
+
+  <h2>🎯 Try Different Color Schemes</h2>
+  <p>Click a color scheme below to change the chatbot's appearance:</p>
+
+  <div class="color-demo">
+    <div class="color-box" style="background: #0066cc;" onclick="changeColors('#0066cc', '#004999')">
+      Tikkurila<br>Blue
+    </div>
+    <div class="color-box" style="background: #667eea;" onclick="changeColors('#667eea', '#764ba2')">
+      Purple<br>Gradient
+    </div>
+    <div class="color-box" style="background: #f56565;" onclick="changeColors('#f56565', '#c53030')">
+      Modern<br>Red
+    </div>
+    <div class="color-box" style="background: #48bb78;" onclick="changeColors('#48bb78', '#2f855a')">
+      Fresh<br>Green
+    </div>
+    <div class="color-box" style="background: #ed8936;" onclick="changeColors('#ed8936', '#c05621')">
+      Warm<br>Orange
+    </div>
+    <div class="color-box" style="background: #2d3748;" onclick="changeColors('#2d3748', '#1a202c')">
+      Dark<br>Gray
+    </div>
+  </div>
+
+  <h2>🔧 Advanced CSS Customization</h2>
+  <p>For complete control, override CSS custom properties:</p>
+
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  .tikkurila-chatbot-container {
+    /* Colors */
+    --primary-color: #667eea;
+    --accent-color: #764ba2;
+    
+    /* Dimensions */
+    --border-radius: 16px;
+    --shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    
+    /* Animation speed */
+    transition-duration: 0.5s;
+  }
+  
+  /* Customize chat button */
+  .tikkurila-chat-button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  /* Customize chat window size */
+  .tikkurila-chat-window {
+    width: 420px;
+    height: 650px;
+  }
+  
+  /* Customize message bubbles */
+  .message-bot .message-content {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+  }
+  
+  /* Customize header */
+  .tikkurila-chat-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>📏 Size Customization</h2>
+  <p>Adjust the chatbot's dimensions:</p>
+
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  /* Larger chat button */
+  .tikkurila-chat-button {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Wider chat window */
+  .tikkurila-chat-window {
+    width: 450px;
+  }
+  
+  /* Taller chat window */
+  .tikkurila-chat-window {
+    height: 700px;
+  }
+  
+  /* Full-height on mobile */
+  @media (max-width: 768px) {
+    .tikkurila-chat-window {
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>✨ Animation Customization</h2>
+  <p>Customize animations and transitions:</p>
+
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  /* Slower animations */
+  .tikkurila-chat-window {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Faster button hover */
+  .tikkurila-chat-button {
+    transition: transform 0.2s ease;
+  }
+  
+  /* Custom message animation */
+  @keyframes messageSlide {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>🎯 Font Customization</h2>
+  <p>Use your brand's font:</p>
+
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  .tikkurila-chatbot-container {
+    font-family: 'Your Brand Font', -apple-system, sans-serif;
+  }
+  
+  /* Larger font size */
+  .message-content {
+    font-size: 15px;
+  }
+  
+  /* Custom header font */
+  .tikkurila-chat-header h3 {
+    font-family: 'Your Display Font', serif;
+    font-size: 18px;
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>🌓 Dark Mode Example</h2>
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  /* Dark theme */
+  .tikkurila-chatbot-container {
+    --primary-color: #1a202c;
+    --accent-color: #2d3748;
+  }
+  
+  .tikkurila-chat-window {
+    background: #1a202c;
+  }
+  
+  .tikkurila-chat-messages {
+    background: #2d3748;
+  }
+  
+  .message-bot .message-content {
+    background: #4a5568;
+    color: white;
+  }
+  
+  .input-wrapper textarea {
+    background: #2d3748;
+    color: white;
+    border-color: #4a5568;
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>🎮 Try It Now</h2>
+  <div class="demo-section">
+    <p>Open the chatbot to see the custom purple gradient styling in action!</p>
+    <button onclick="tikkurilaChatbot.open()">Open Custom Chatbot</button>
+  </div>
+
+  <h2>📱 Responsive Design</h2>
+  <p>The chatbot is responsive by default, but you can customize mobile behavior:</p>
+
+  <div class="code-block">
+    <pre>&lt;style&gt;
+  @media (max-width: 768px) {
+    /* Full-screen on mobile */
+    .tikkurila-chat-window {
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Hide chat button on very small screens */
+    @media (max-width: 380px) {
+      .tikkurila-chat-button {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+&lt;/style&gt;</pre>
+  </div>
+
+  <h2>🎨 Position Customization</h2>
+  <p>Place the chatbot anywhere:</p>
+
+  <div class="code-block">
+    <pre>// Configuration option
+const chatbot = new TikkurilaChatbot({
+  position: 'bottom-left' // or 'bottom-right'
+});
+
+// Or with CSS
+.tikkurila-chatbot-container {
+  left: 20px;  /* instead of right */
+  bottom: 20px;
+}
+
+// Top-right corner
+.tikkurila-chatbot-container {
+  top: 20px;
+  right: 20px;
+  bottom: auto;
+}</pre>
+  </div>
+
+  <h2>📚 More Examples</h2>
+  <ul>
+    <li><a href="basic-integration.html" style="color: white;">Basic Integration</a> - Simple setup</li>
+    <li><a href="ai-powered-integration.html" style="color: white;">AI-Powered</a> - Add intelligence</li>
+    <li><a href="../demo/chatbot-demo.html" style="color: white;">Full Demo</a> - All features</li>
+  </ul>
+
+  <!-- Initialize the chatbot with custom purple styling -->
+  <script type="module">
+    import { TikkurilaChatbot } from '../src/chatbot-widget.js';
+    
+    let chatbot = new TikkurilaChatbot({
+      baseUrl: window.location.origin + window.location.pathname.replace(/\/examples\/.*$/, ''),
+      primaryColor: '#667eea',
+      accentColor: '#764ba2',
+      greeting: 'Hi! 👋 Notice my custom purple styling? Try clicking the color schemes above!',
+      position: 'bottom-right'
+    });
+    
+    await chatbot.init();
+    window.tikkurilaChatbot = chatbot;
+    
+    // Function to change colors dynamically
+    window.changeColors = async function(primary, accent) {
+      // Destroy existing chatbot
+      chatbot.destroy();
+      
+      // Create new one with new colors
+      chatbot = new TikkurilaChatbot({
+        baseUrl: window.location.origin + window.location.pathname.replace(/\/examples\/.*$/, ''),
+        primaryColor: primary,
+        accentColor: accent,
+        greeting: '✨ Colors changed! Looking good, right?',
+        position: 'bottom-right'
+      });
+      
+      await chatbot.init();
+      window.tikkurilaChatbot = chatbot;
+      
+      // Open to show the new colors
+      setTimeout(() => chatbot.open(), 100);
+    };
+  </script>
+</body>
+</html>

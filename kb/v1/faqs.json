@@ -3,7 +3,7 @@
     {
       "intent": "which-paint-for-ceiling",
       "question": "What do I use on ceilings to hide roller marks?",
-      "answer": "Use Anti-Reflex White [2] for ultra‑matt, light‑diffusing ceilings that minimise roller marks.",
+      "answer": "Use **Anti-Reflex White [2]** for ultra-matt, light-diffusing ceilings that minimise roller marks. It's specifically designed for this purpose.\n\n[View Product](https://www.tikkurila.co.uk/anti-reflex-white-2)",
       "links": {
         "pdp": "https://www.tikkurila.co.uk/anti-reflex-white-2"
       },
@@ -12,9 +12,111 @@
     {
       "intent": "bathroom-paint",
       "question": "What should I use in a bathroom?",
-      "answer": "Use the Luja system (Luja Universal Primer + Luja topcoat) for moisture and mould resistance.",
+      "answer": "For bathrooms, use the **Luja** system (Luja Universal Primer + Luja topcoat) for excellent moisture and mould resistance. It's specifically designed for humid environments.\n\n[View Product](https://www.tikkurila.co.uk/luja-20)",
       "links": {
         "pdp": "https://www.tikkurila.co.uk/luja-20"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "washable-paint",
+      "question": "Which paint is most washable for high-traffic areas?",
+      "answer": "**Optiva Satin [5]** offers exceptional washability with class 1 scrub resistance. It's perfect for hallways, kitchens, and children's rooms where durability is essential.\n\n[View Product](https://www.tikkurila.co.uk/optiva-satin-5)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/optiva-satin-5"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "wood-trim-paint",
+      "question": "What should I use for painting interior wood trim?",
+      "answer": "For interior trim, doors, and woodwork, use **Helmi [30]** (semi-gloss) or **Everal Aqua [40]** (high gloss). Both are water-based enamels with excellent durability and flow.\n\n[View Helmi](https://www.tikkurila.co.uk/helmi-30)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/helmi-30"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "exterior-wood",
+      "question": "What's the best paint for exterior wood cladding?",
+      "answer": "**Pika-Teho** is our premium exterior wood paint with excellent weather resistance, UV protection, and breathability. Perfect for cladding, fences, and sheds.\n\n[View Product](https://www.tikkurila.co.uk/pika-teho)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/pika-teho"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "masonry-paint",
+      "question": "Which paint for exterior brick walls?",
+      "answer": "**Euro 12** is our premium masonry paint for walls and render. It's highly durable, weather-resistant, breathable, and has anti-fungal properties.\n\n[View Product](https://www.tikkurila.co.uk/euro-12)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/euro-12"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "primer-needed",
+      "question": "Do I need to use a primer?",
+      "answer": "Primer is recommended for:\n• Bare or unpainted surfaces\n• Porous surfaces (new plaster, wood)\n• Difficult surfaces (tiles, glass, metal)\n• Moisture-prone areas (bathrooms)\n\nUse **Otex Akva** for multi-surface adhesion or **Luja Universal Primer** for humid areas.",
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "how-many-coats",
+      "question": "How many coats of paint do I need?",
+      "answer": "Most Tikkurila paints require **2 coats** for optimal coverage and durability. Darker colours or covering bold colours may need an additional coat. Always check the specific product data sheet.",
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "drying-time",
+      "question": "How long does paint take to dry?",
+      "answer": "Most water-based paints are touch-dry in 2-4 hours and ready for recoating after 4-6 hours. Full curing takes 2-4 weeks. Exact times depend on temperature, humidity, and ventilation.",
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "coverage",
+      "question": "How much paint do I need?",
+      "answer": "Most Tikkurila paints cover **10-12 m²/L** per coat. For a room, measure wall area (height × width for each wall) and divide by coverage rate, then multiply by number of coats (usually 2). Add 10% for wastage.",
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "paint-radiator",
+      "question": "Can I paint radiators?",
+      "answer": "Yes! Use **Helmi [30]** for radiators. Make sure the radiator is cold and clean. Apply thin coats for best results. The paint is heat-resistant once fully cured.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/helmi-30"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "mould-prevention",
+      "question": "How do I prevent mould in my bathroom?",
+      "answer": "Use the **Luja** system which has mould-resistant properties. Also ensure good ventilation, wipe down wet surfaces, and treat any existing mould before painting.\n\n[View Product](https://www.tikkurila.co.uk/luja-20)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/luja-20"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "eco-friendly",
+      "question": "Do you have eco-friendly paint options?",
+      "answer": "**Harmony Interior** features air-purifying technology that reduces indoor air pollutants. It's low-VOC, allergen-friendly, and perfect for bedrooms and nurseries.\n\n[View Product](https://www.tikkurila.co.uk/harmony)",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/harmony"
+      },
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "floor-paint",
+      "question": "What paint can I use on floors?",
+      "answer": "For concrete floors, use **Panssarimaali** (heavy-duty floor paint). For wood floors, use **Supi Lattiaöljy** (floor oil) or **Kiva** (floor lacquer) depending on your preferred finish.",
+      "lastUpdated": "2025-09-30"
+    },
+    {
+      "intent": "paint-furniture",
+      "question": "Can I paint furniture with your paints?",
+      "answer": "**Liitu** is our chalk paint specifically designed for furniture and decorative finishes. It gives a beautiful vintage look with minimal surface prep. For a more durable finish, use **Helmi [30]** or **Everal Aqua [40]**.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/liitu"
       },
       "lastUpdated": "2025-09-30"
     }

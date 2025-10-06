@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Integration Example - Tikkurila Chatbot</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0066cc;
+    }
+    .code-block {
+      background: #f5f7f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+    .code-block pre {
+      margin: 0;
+    }
+    .demo-section {
+      background: #e8f4f8;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border-left: 4px solid #0066cc;
+    }
+    button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+    }
+    button:hover {
+      background: #004999;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Tikkurila Chatbot - Basic Integration Example</h1>
+  
+  <p>This page demonstrates the simplest way to add the Tikkurila chatbot to your website.</p>
+
+  <h2>📝 The Code</h2>
+  <p>All you need is these few lines before your closing <code>&lt;/body&gt;</code> tag:</p>
+
+  <div class="code-block">
+    <pre>&lt;!-- Tikkurila Chatbot --&gt;
+&lt;script type="module"&gt;
+  import { TikkurilaChatbot } from './src/chatbot-widget.js';
+  
+  const chatbot = new TikkurilaChatbot({
+    baseUrl: window.location.origin,
+    primaryColor: '#0066cc',
+    greeting: 'Hi! How can I help with your decorating project?'
+  });
+  
+  await chatbot.init();
+  window.tikkurilaChatbot = chatbot;
+&lt;/script&gt;</pre>
+  </div>
+
+  <h2>🎮 Try It Now</h2>
+  <div class="demo-section">
+    <p><strong>The chatbot is already active on this page!</strong></p>
+    <p>Look for the chat button in the bottom-right corner, or use these controls:</p>
+    
+    <button onclick="tikkurilaChatbot.open()">Open Chat</button>
+    <button onclick="tikkurilaChatbot.close()">Close Chat</button>
+    <button onclick="tikkurilaChatbot.sendMessage('What paint for my bathroom?')">Ask About Bathroom Paint</button>
+    <button onclick="tikkurilaChatbot.sendMessage('Best ceiling paint?')">Ask About Ceiling Paint</button>
+  </div>
+
+  <h2>💡 How It Works</h2>
+  <ol>
+    <li><strong>Import the chatbot widget</strong> - ES6 module with all functionality</li>
+    <li><strong>Configure options</strong> - Set your brand colors, position, greeting, etc.</li>
+    <li><strong>Initialize</strong> - Loads the knowledge base and creates the UI</li>
+    <li><strong>Done!</strong> - The chatbot is ready to help your customers</li>
+  </ol>
+
+  <h2>🎨 Customization Options</h2>
+  <div class="code-block">
+    <pre>const chatbot = new TikkurilaChatbot({
+  // Required
+  baseUrl: 'https://your-domain.com',
+  
+  // Optional - AI Configuration
+  apiKey: 'sk-...', // OpenAI or Anthropic key
+  apiProvider: 'openai', // or 'anthropic'
+  model: 'gpt-4o-mini',
+  
+  // Optional - Appearance
+  primaryColor: '#0066cc',
+  accentColor: '#004999',
+  position: 'bottom-right', // or 'bottom-left'
+  
+  // Optional - Content
+  greeting: 'Custom greeting message'
+});</pre>
+  </div>
+
+  <h2>🔄 Programmatic Control</h2>
+  <p>You can control the chatbot with JavaScript:</p>
+  <div class="code-block">
+    <pre>// Open the chat
+tikkurilaChatbot.open();
+
+// Close the chat
+tikkurilaChatbot.close();
+
+// Toggle (open if closed, close if open)
+tikkurilaChatbot.toggle();
+
+// Send a message programmatically
+tikkurilaChatbot.sendMessage('Your message here');
+
+// Destroy the chatbot
+tikkurilaChatbot.destroy();</pre>
+  </div>
+
+  <h2>📚 More Examples</h2>
+  <ul>
+    <li><a href="ai-powered-integration.html">AI-Powered Integration</a> - Add OpenAI for smarter responses</li>
+    <li><a href="custom-styling.html">Custom Styling</a> - Match your brand perfectly</li>
+    <li><a href="../demo/chatbot-demo.html">Full Demo</a> - See all features in action</li>
+  </ul>
+
+  <h2>📖 Documentation</h2>
+  <ul>
+    <li><a href="../QUICK_START.md">Quick Start Guide</a></li>
+    <li><a href="../CHATBOT_README.md">Full Documentation</a></li>
+  </ul>
+
+  <!-- Initialize the chatbot -->
+  <script type="module">
+    import { TikkurilaChatbot } from '../src/chatbot-widget.js';
+    
+    const chatbot = new TikkurilaChatbot({
+      baseUrl: window.location.origin + window.location.pathname.replace(/\/examples\/.*$/, ''),
+      primaryColor: '#0066cc',
+      accentColor: '#004999',
+      greeting: 'Hi! 👋 This is a basic integration example. Ask me about paint products!'
+    });
+    
+    await chatbot.init();
+    window.tikkurilaChatbot = chatbot;
+  </script>
+</body>
+</html>

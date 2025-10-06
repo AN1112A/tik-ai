@@ -1,3 +1,92 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "otex-akva",
+      "name": "Otex Akva",
+      "description": "Water-based adhesion primer for demanding surfaces",
+      "category": "primers",
+      "subCategory": "universal",
+      "rooms": ["interior", "exterior"],
+      "surfaces": ["wood", "metal", "plastic", "glass", "tiles"],
+      "features": [
+        "excellent adhesion",
+        "water-based",
+        "multi-surface",
+        "quick-drying",
+        "low odour"
+      ],
+      "finish": "primer",
+      "coverage": "8-10 m²/L",
+      "coats": 1,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/otex-akva",
+      "price": "From £38"
+    },
+    {
+      "id": "luja-universal-primer",
+      "name": "Luja Universal Primer",
+      "description": "Moisture-resistant primer for humid areas",
+      "category": "primers",
+      "subCategory": "specialist",
+      "rooms": ["bathroom", "kitchen", "wet-room"],
+      "surfaces": ["plaster", "concrete", "masonry"],
+      "features": [
+        "moisture resistant",
+        "mould resistant",
+        "seals surface",
+        "enhances topcoat adhesion"
+      ],
+      "issues": ["moisture", "mould"],
+      "finish": "primer",
+      "coverage": "8-10 m²/L",
+      "coats": 1,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/luja-universal-primer",
+      "price": "From £35",
+      "notes": "Use with Luja topcoat for optimal moisture protection"
+    },
+    {
+      "id": "rostex-super",
+      "name": "Rostex Super",
+      "description": "Anti-corrosive primer for metal surfaces",
+      "category": "primers",
+      "subCategory": "metal",
+      "rooms": ["interior", "exterior"],
+      "surfaces": ["metal", "steel", "iron", "radiators"],
+      "features": [
+        "anti-corrosive",
+        "rust prevention",
+        "excellent adhesion",
+        "solvent-based",
+        "long-lasting protection"
+      ],
+      "finish": "primer",
+      "coverage": "10-12 m²/L",
+      "coats": 1,
+      "dryingTime": "6-8 hours",
+      "link": "https://www.tikkurila.co.uk/rostex-super",
+      "price": "From £42"
+    },
+    {
+      "id": "euro-primer",
+      "name": "Euro Primer",
+      "description": "Masonry primer for exterior walls",
+      "category": "primers",
+      "subCategory": "masonry",
+      "rooms": ["exterior"],
+      "surfaces": ["masonry", "render", "concrete", "brick"],
+      "features": [
+        "seals porous surfaces",
+        "evens absorption",
+        "enhances topcoat adhesion",
+        "water-based"
+      ],
+      "finish": "primer",
+      "coverage": "6-8 m²/L",
+      "coats": 1,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/euro-primer",
+      "price": "From £32"
+    }
+  ]
 }

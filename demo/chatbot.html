@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tikkurila Decorating Assistant - Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .demo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .feature-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .cta {
+      background: white;
+      border-radius: 16px;
+      padding: 48px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .chat-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #E30613;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    .chat-indicator::before {
+      content: '💬';
+      font-size: 24px;
+    }
+
+    .integration-code {
+      margin-top: 40px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
+    }
+
+    .integration-code h3 {
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .code-block {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .code-comment {
+      color: #6a9955;
+    }
+
+    .code-tag {
+      color: #569cd6;
+    }
+
+    .code-attr {
+      color: #9cdcfe;
+    }
+
+    .code-value {
+      color: #ce9178;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-container">
+    <div class="hero">
+      <h1>🎨 Tikkurila Decorating Assistant</h1>
+      <p>Get expert advice on paint selection and decorating projects with our AI-powered assistant</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Expert Recommendations</h3>
+        <p>Get personalized product suggestions based on your specific decorating needs and surface requirements.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🏠</div>
+        <h3>Room-Specific Advice</h3>
+        <p>Whether it's bathrooms, ceilings, or any other space, get tailored recommendations for each area.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Instant FAQs</h3>
+        <p>Access our comprehensive knowledge base of frequently asked questions and expert tips.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Try the Assistant Now!</h2>
+      <p>Click the chat button in the bottom-right corner to start a conversation</p>
+      <div class="chat-indicator">
+        Start chatting now
+      </div>
+
+      <div class="integration-code">
+        <h3>How to Integrate on Your Website</h3>
+        <p style="margin-bottom: 16px; color: #666;">Simply add this script tag to your HTML:</p>
+        <div class="code-block">
+<span class="code-comment">&lt;!-- Add this before closing &lt;/body&gt; tag --&gt;</span>
+<span class="code-tag">&lt;script</span> <span class="code-attr">type</span>=<span class="code-value">"module"</span><span class="code-tag">&gt;</span>
+  <span class="code-tag">import</span> { TikkilaChat } <span class="code-tag">from</span> <span class="code-value">'./src/chat-widget.mjs'</span>;
+  
+  <span class="code-comment">// Initialize the chat widget</span>
+  <span class="code-tag">const</span> chat = <span class="code-tag">new</span> TikkilaChat({
+    baseUrl: <span class="code-value">''</span>,  <span class="code-comment">// Your KB base URL</span>
+    primaryColor: <span class="code-value">'#E30613'</span>  <span class="code-comment">// Tikkurila red</span>
+  });
+  
+  <span class="code-tag">await</span> chat.initialize();
+  chat.render();
+<span class="code-tag">&lt;/script&gt;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tikkurila Chat Widget -->
+  <script type="module">
+    import { TikkilaChat } from '../src/chat-widget.mjs';
+    
+    // Get base URL (adjust for your deployment)
+    const baseUrl = location.origin + location.pathname.replace(/\/demo\/.*$/, '');
+    
+    const chat = new TikkilaChat({
+      baseUrl: baseUrl,
+      primaryColor: '#E30613'
+    });
+
+    try {
+      await chat.initialize();
+      chat.render();
+      console.log('✅ Tikkurila Chat initialized');
+    } catch (error) {
+      console.error('❌ Failed to initialize chat:', error);
+    }
+  </script>
+</body>
+</html>

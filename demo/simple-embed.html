@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Embed Example - Tikkurila Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #E30613;
+    }
+    .notice {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Tikkurila Website</h1>
+  <p>This is a simple example of how the Tikkurila chat widget looks on any webpage.</p>
+  
+  <div class="notice">
+    <strong>👉 Look at the bottom-right corner!</strong><br>
+    Click the chat button to start talking with the Tikkurila decorating assistant.
+  </div>
+
+  <h2>About Our Paints</h2>
+  <p>
+    Tikkurila offers a comprehensive range of high-quality paints and coatings for both 
+    interior and exterior use. Whether you're a professional decorator or a DIY enthusiast, 
+    we have the perfect solution for your project.
+  </p>
+
+  <h2>Why Choose Tikkurila?</h2>
+  <ul>
+    <li>Premium quality paints with excellent coverage</li>
+    <li>Wide range of colors and finishes</li>
+    <li>Environmentally friendly options</li>
+    <li>Expert technical support</li>
+    <li>Trusted by professionals for over 150 years</li>
+  </ul>
+
+  <h2>Need Help Choosing?</h2>
+  <p>
+    Not sure which paint to use? Our AI assistant in the chat widget can help you find 
+    the perfect product for your specific needs. Just describe your project and get 
+    instant recommendations!
+  </p>
+
+  <!-- ============================================
+       TIKKURILA CHAT WIDGET - EMBED CODE
+       Copy everything below to add chat to your site
+       ============================================ -->
+  <script type="module">
+    import { TikkilaChat } from '../src/chat-widget.mjs';
+    
+    // Configure the chat widget
+    const chat = new TikkilaChat({
+      baseUrl: location.origin + location.pathname.replace(/\/demo\/.*$/, ''),
+      primaryColor: '#E30613',  // Tikkurila brand color
+      // Add more theme options here if needed:
+      // textColor: '#333333',
+      // backgroundColor: '#ffffff'
+    });
+
+    // Initialize and display the chat
+    try {
+      await chat.initialize();
+      chat.render();
+      console.log('✅ Tikkurila Chat Widget loaded successfully');
+    } catch (error) {
+      console.error('❌ Failed to load Tikkurila Chat Widget:', error);
+    }
+  </script>
+  <!-- END TIKKURILA CHAT WIDGET -->
+
+</body>
+</html>

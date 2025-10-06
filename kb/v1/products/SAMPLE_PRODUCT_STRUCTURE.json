@@ -1,0 +1,156 @@
+{
+  "products": [
+    {
+      "name": "Anti-Reflex White 2",
+      "sku": "AR-WHITE-2",
+      "category": "Interior",
+      "subcategory": "Ceiling Paints",
+      "description": "Ultra-matt, light-diffusing ceiling paint that minimises roller marks and imperfections.",
+      "features": [
+        "Ultra-matt finish",
+        "Light diffusing",
+        "Hides roller marks",
+        "Low VOC",
+        "Excellent coverage"
+      ],
+      "rooms": ["living-room", "bedroom", "hallway", "kitchen", "bathroom"],
+      "surfaces": ["ceiling"],
+      "issues": ["roller-marks", "imperfections"],
+      "finish": "Ultra matt",
+      "coverage": "8-10 m²/L",
+      "dryingTime": "2-3 hours",
+      "coats": 2,
+      "base": "Water-based",
+      "voc": "Low",
+      "price": {
+        "currency": "GBP",
+        "amount": 45.99,
+        "unit": "2.5L"
+      },
+      "url": "https://www.tikkurila.co.uk/anti-reflex-white-2",
+      "imageUrl": "https://www.tikkurila.co.uk/images/products/anti-reflex-white.jpg",
+      "inStock": true,
+      "rating": 4.8,
+      "reviewCount": 342,
+      "lastUpdated": "2025-10-06"
+    },
+    {
+      "name": "Luja 20",
+      "sku": "LUJA-20",
+      "category": "Interior",
+      "subcategory": "Specialist Paints",
+      "description": "Premium moisture and mould resistant paint, perfect for bathrooms and humid environments.",
+      "features": [
+        "Moisture resistant",
+        "Mould resistant", 
+        "Washable",
+        "Durable finish",
+        "Low odor",
+        "Easy to clean"
+      ],
+      "rooms": ["bathroom", "kitchen", "laundry", "utility-room"],
+      "surfaces": ["walls", "ceiling"],
+      "issues": ["moisture", "mould", "humidity", "steam"],
+      "finish": "Semi-matt",
+      "coverage": "8-10 m²/L",
+      "dryingTime": "2-4 hours",
+      "coats": 2,
+      "base": "Water-based",
+      "voc": "Low",
+      "price": {
+        "currency": "GBP",
+        "amount": 52.99,
+        "unit": "2.5L"
+      },
+      "url": "https://www.tikkurila.co.uk/luja-20",
+      "imageUrl": "https://www.tikkurila.co.uk/images/products/luja-20.jpg",
+      "inStock": true,
+      "requiresPrimer": true,
+      "recommendedPrimer": "Luja Universal Primer",
+      "rating": 4.9,
+      "reviewCount": 567,
+      "lastUpdated": "2025-10-06"
+    },
+    {
+      "name": "Optiva Matt 7",
+      "sku": "OPT-MATT-7",
+      "category": "Interior",
+      "subcategory": "Wall Paints",
+      "description": "Premium washable matt paint with excellent durability and scrubbability for high-traffic areas.",
+      "features": [
+        "Washable",
+        "Scrubbable (Class 1)",
+        "Durable",
+        "Low VOC",
+        "Excellent hiding power",
+        "Resists stains"
+      ],
+      "rooms": ["hallway", "kitchen", "living-room", "children-room", "stairs"],
+      "surfaces": ["walls"],
+      "issues": ["high-traffic", "washability", "durability", "stains"],
+      "finish": "Matt",
+      "coverage": "8-10 m²/L",
+      "dryingTime": "2-3 hours",
+      "coats": 2,
+      "base": "Water-based",
+      "voc": "Very Low",
+      "scrubClass": 1,
+      "price": {
+        "currency": "GBP",
+        "amount": 48.99,
+        "unit": "2.5L"
+      },
+      "colors": ["White", "Magnolia", "Available in 1000+ colors"],
+      "url": "https://www.tikkurila.co.uk/optiva-matt-7",
+      "imageUrl": "https://www.tikkurila.co.uk/images/products/optiva-matt-7.jpg",
+      "inStock": true,
+      "rating": 4.7,
+      "reviewCount": 892,
+      "lastUpdated": "2025-10-06"
+    },
+    {
+      "name": "Helmi 30",
+      "sku": "HELMI-30",
+      "category": "Interior",
+      "subcategory": "Trim & Wood",
+      "description": "Water-based semi-gloss enamel for interior trim, doors, and furniture with excellent flow and leveling.",
+      "features": [
+        "Semi-gloss finish",
+        "Excellent flow",
+        "Hard-wearing",
+        "Water-based",
+        "Low odor",
+        "Easy to apply"
+      ],
+      "rooms": ["all"],
+      "surfaces": ["trim", "doors", "furniture", "radiators", "woodwork"],
+      "issues": ["durability", "washability"],
+      "finish": "Semi-gloss",
+      "coverage": "10-12 m²/L",
+      "dryingTime": "4-6 hours",
+      "coats": 2,
+      "base": "Water-based",
+      "voc": "Low",
+      "price": {
+        "currency": "GBP",
+        "amount": 39.99,
+        "unit": "0.9L"
+      },
+      "colors": ["White", "Available in multiple colors"],
+      "url": "https://www.tikkurila.co.uk/helmi-30",
+      "imageUrl": "https://www.tikkurila.co.uk/images/products/helmi-30.jpg",
+      "inStock": true,
+      "requiresPrimer": true,
+      "recommendedPrimer": "Otex Adhesion Primer",
+      "rating": 4.8,
+      "reviewCount": 445,
+      "lastUpdated": "2025-10-06"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-10-06",
+    "version": "1.0",
+    "totalProducts": 4,
+    "notes": "This is a sample structure. Replace with your actual product data. You can add products to interior.json, exterior.json, primers.json, or specialist.json."
+  }
+}

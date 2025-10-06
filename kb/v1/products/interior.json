@@ -1,3 +1,183 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "anti-reflex-2",
+      "name": "Anti-Reflex White [2]",
+      "description": "Ultra-matt ceiling paint that minimizes roller marks and light reflection",
+      "category": "interior",
+      "subCategory": "ceiling",
+      "rooms": ["ceiling", "living-room", "bedroom", "hallway"],
+      "surfaces": ["ceiling", "plaster", "plasterboard"],
+      "features": [
+        "ultra-matt finish",
+        "light-diffusing",
+        "hides roller marks",
+        "excellent coverage",
+        "low odour"
+      ],
+      "finish": "ultra-matt",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/anti-reflex-white-2",
+      "price": "From £45"
+    },
+    {
+      "id": "optiva-matt-3",
+      "name": "Optiva Matt [3]",
+      "description": "Premium washable matt emulsion for walls and ceilings",
+      "category": "interior",
+      "subCategory": "walls",
+      "rooms": ["living-room", "bedroom", "hallway", "dining-room"],
+      "surfaces": ["walls", "ceiling", "plaster", "wallpaper"],
+      "features": [
+        "excellent washability",
+        "class 2 scrub resistance",
+        "matt finish",
+        "low odour",
+        "tintable to 10,000+ colours"
+      ],
+      "finish": "matt",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/optiva-matt-3",
+      "price": "From £52"
+    },
+    {
+      "id": "optiva-satin-5",
+      "name": "Optiva Satin [5]",
+      "description": "Premium washable satin emulsion with excellent durability",
+      "category": "interior",
+      "subCategory": "walls",
+      "rooms": ["kitchen", "hallway", "children's-room"],
+      "surfaces": ["walls", "plaster"],
+      "features": [
+        "exceptional washability",
+        "class 1 scrub resistance",
+        "satin sheen",
+        "highly durable",
+        "stain resistant",
+        "tintable"
+      ],
+      "finish": "satin",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/optiva-satin-5",
+      "price": "From £58"
+    },
+    {
+      "id": "luja-20",
+      "name": "Luja [20]",
+      "description": "Moisture and mould-resistant paint for humid areas",
+      "category": "interior",
+      "subCategory": "specialist",
+      "rooms": ["bathroom", "kitchen", "laundry", "wet-room"],
+      "surfaces": ["walls", "ceiling", "plaster"],
+      "features": [
+        "moisture resistant",
+        "mould resistant",
+        "semi-gloss finish",
+        "easy to clean",
+        "withstands condensation"
+      ],
+      "issues": ["moisture", "mould", "humidity"],
+      "finish": "semi-gloss",
+      "coverage": "9-11 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/luja-20",
+      "price": "From £48",
+      "notes": "Use with Luja Universal Primer for best results"
+    },
+    {
+      "id": "helmi-30",
+      "name": "Helmi [30]",
+      "description": "Water-based enamel for interior wood and metal",
+      "category": "interior",
+      "subCategory": "trim",
+      "rooms": ["all-rooms"],
+      "surfaces": ["wood", "metal", "trim", "doors", "windows", "radiators"],
+      "features": [
+        "water-based",
+        "durable enamel",
+        "semi-gloss finish",
+        "low odour",
+        "excellent flow"
+      ],
+      "finish": "semi-gloss",
+      "coverage": "12-14 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/helmi-30",
+      "price": "From £42"
+    },
+    {
+      "id": "everal-aqua-40",
+      "name": "Everal Aqua [40]",
+      "description": "Premium water-based enamel with high gloss finish",
+      "category": "interior",
+      "subCategory": "trim",
+      "rooms": ["all-rooms"],
+      "surfaces": ["wood", "metal", "trim", "doors", "furniture"],
+      "features": [
+        "water-based",
+        "high gloss",
+        "extremely durable",
+        "excellent flow and leveling",
+        "low odour"
+      ],
+      "finish": "gloss",
+      "coverage": "12-14 m²/L",
+      "coats": 2,
+      "dryingTime": "6-8 hours",
+      "link": "https://www.tikkurila.co.uk/everal-aqua-40",
+      "price": "From £55"
+    },
+    {
+      "id": "vinyl-matt-w448",
+      "name": "Vinyl Matt W448",
+      "description": "Economical matt emulsion for walls and ceilings",
+      "category": "interior",
+      "subCategory": "walls",
+      "rooms": ["bedroom", "living-room", "hallway"],
+      "surfaces": ["walls", "ceiling", "plaster"],
+      "features": [
+        "matt finish",
+        "good coverage",
+        "economical",
+        "low odour"
+      ],
+      "finish": "matt",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/vinyl-matt-w448",
+      "price": "From £28"
+    },
+    {
+      "id": "harmony",
+      "name": "Harmony Interior",
+      "description": "Premium interior paint with air-purifying technology",
+      "category": "interior",
+      "subCategory": "walls",
+      "rooms": ["bedroom", "nursery", "living-room"],
+      "surfaces": ["walls", "ceiling"],
+      "features": [
+        "air-purifying",
+        "reduces indoor air pollutants",
+        "matt finish",
+        "excellent coverage",
+        "low VOC",
+        "allergen-friendly"
+      ],
+      "finish": "matt",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/harmony",
+      "price": "From £65"
+    }
+  ]
 }

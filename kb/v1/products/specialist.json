@@ -1,3 +1,114 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "panssarimaali",
+      "name": "Panssarimaali",
+      "description": "Heavy-duty floor paint for concrete and wood floors",
+      "category": "specialist",
+      "subCategory": "floors",
+      "rooms": ["garage", "basement", "workshop"],
+      "surfaces": ["concrete", "wood", "floors"],
+      "features": [
+        "extremely durable",
+        "abrasion resistant",
+        "chemical resistant",
+        "easy to clean",
+        "semi-gloss finish"
+      ],
+      "finish": "semi-gloss",
+      "coverage": "8-10 m²/L",
+      "coats": 2,
+      "dryingTime": "24 hours",
+      "link": "https://www.tikkurila.co.uk/panssarimaali",
+      "price": "From £52"
+    },
+    {
+      "id": "supi-lattiaoljy",
+      "name": "Supi Lattiaöljy",
+      "description": "Floor oil for interior wood floors",
+      "category": "specialist",
+      "subCategory": "floors",
+      "rooms": ["living-room", "bedroom", "hallway"],
+      "surfaces": ["wood-floors", "parquet"],
+      "features": [
+        "penetrating oil",
+        "wear resistant",
+        "water-repellent",
+        "enhances wood grain",
+        "easy maintenance"
+      ],
+      "finish": "natural-satin",
+      "coverage": "10-15 m²/L",
+      "coats": 2,
+      "dryingTime": "12 hours",
+      "link": "https://www.tikkurila.co.uk/supi-lattiaoljy",
+      "price": "From £45"
+    },
+    {
+      "id": "kiva",
+      "name": "Kiva",
+      "description": "Lacquer for interior wood floors",
+      "category": "specialist",
+      "subCategory": "floors",
+      "rooms": ["living-room", "bedroom", "hallway"],
+      "surfaces": ["wood-floors", "parquet"],
+      "features": [
+        "water-based lacquer",
+        "extremely durable",
+        "scratch resistant",
+        "low odour",
+        "semi-gloss finish"
+      ],
+      "finish": "semi-gloss",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "4-6 hours",
+      "link": "https://www.tikkurila.co.uk/kiva",
+      "price": "From £58"
+    },
+    {
+      "id": "magnetic-paint",
+      "name": "Magnetic Paint",
+      "description": "Magnetic base coat for walls",
+      "category": "specialist",
+      "subCategory": "decorative",
+      "rooms": ["children's-room", "office", "kitchen"],
+      "surfaces": ["walls", "plaster"],
+      "features": [
+        "magnetic surface",
+        "paintable topcoat",
+        "creative solution",
+        "non-toxic"
+      ],
+      "finish": "base-coat",
+      "coverage": "2 m²/L",
+      "coats": 3,
+      "dryingTime": "4 hours",
+      "link": "https://www.tikkurila.co.uk/magnetic-paint",
+      "price": "From £35",
+      "notes": "Requires 3 coats for optimal magnetic strength. Top with any emulsion."
+    },
+    {
+      "id": "liitu",
+      "name": "Liitu",
+      "description": "Chalk paint for furniture and decorative finishes",
+      "category": "specialist",
+      "subCategory": "decorative",
+      "rooms": ["all-rooms"],
+      "surfaces": ["wood", "metal", "furniture"],
+      "features": [
+        "chalk finish",
+        "vintage look",
+        "easy to apply",
+        "minimal prep needed",
+        "water-based"
+      ],
+      "finish": "ultra-matt",
+      "coverage": "10-12 m²/L",
+      "coats": 2,
+      "dryingTime": "2-4 hours",
+      "link": "https://www.tikkurila.co.uk/liitu",
+      "price": "From £38"
+    }
+  ]
 }

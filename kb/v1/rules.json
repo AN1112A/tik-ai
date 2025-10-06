@@ -2,21 +2,96 @@
   "routing": {
     "ceilings": {
       "prefer": "Anti-Reflex White [2]",
-      "hint": "Use on ceilings/critical light to minimise roller marks."
+      "hint": "Ultra-matt finish minimises roller marks and light reflection."
     },
     "bathrooms": {
       "preferRange": "Luja",
-      "hint": "Moisture + mould resistance for humid rooms."
+      "hint": "Moisture and mould resistance for humid environments. Use with Luja Universal Primer."
+    },
+    "kitchens": {
+      "prefer": "Optiva Satin [5]",
+      "hint": "Exceptional washability and stain resistance for high-use areas."
+    },
+    "hallways": {
+      "prefer": "Optiva Satin [5]",
+      "hint": "Durable and washable for high-traffic areas."
+    },
+    "children's-rooms": {
+      "prefer": "Optiva Satin [5]",
+      "hint": "Easy to clean and highly durable. Consider Harmony for air-purifying properties."
+    },
+    "bedrooms": {
+      "prefer": "Optiva Matt [3]",
+      "hint": "Premium washable matt with excellent coverage."
+    },
+    "living-rooms": {
+      "prefer": "Optiva Matt [3]",
+      "hint": "High-quality matt finish with excellent washability."
+    },
+    "exterior-wood": {
+      "prefer": "Pika-Teho",
+      "hint": "Premium weather protection with UV resistance."
+    },
+    "exterior-masonry": {
+      "prefer": "Euro 12",
+      "hint": "Durable, breathable masonry paint with anti-fungal properties."
+    },
+    "decking": {
+      "prefer": "Teho Oil",
+      "hint": "Penetrating oil with water-repellent and UV protection."
+    },
+    "interior-trim": {
+      "prefer": "Helmi [30]",
+      "hint": "Water-based enamel with excellent flow. Use Everal Aqua for high gloss."
+    },
+    "radiators": {
+      "prefer": "Helmi [30]",
+      "hint": "Heat-resistant water-based enamel."
+    },
+    "floors-concrete": {
+      "prefer": "Panssarimaali",
+      "hint": "Heavy-duty floor paint for garages, basements, workshops."
+    },
+    "floors-wood": {
+      "prefer": "Kiva",
+      "hint": "Durable lacquer for interior wood floors. Use Supi Lattiaöljy for oil finish."
+    },
+    "furniture": {
+      "prefer": "Liitu",
+      "hint": "Chalk paint for vintage look, or Helmi/Everal Aqua for durable finish."
     }
   },
   "tieBreakers": [
-    "Prefer washable/scrub-class paints (e.g., Optiva) over Vinyl when durability is requested.",
-    "Prefer water-based enamels (Helmi/Everal Aqua) for interior trim unless solvent-based specifically required."
+    "Prefer washable/scrub-class paints (Optiva Satin) over Vinyl Matt when durability is requested.",
+    "Prefer water-based enamels (Helmi/Everal Aqua) for interior trim unless solvent-based specifically required.",
+    "For moisture issues, always recommend Luja system with primer.",
+    "For high-traffic areas, recommend Optiva Satin [5] over Optiva Matt [3].",
+    "For eco-conscious customers, recommend Harmony Interior.",
+    "For budget-conscious projects, suggest Vinyl Matt W448 for low-traffic areas.",
+    "Always mention primer for bare surfaces, difficult substrates, or moisture-prone areas."
   ],
   "defaults": {
     "coats": 2,
     "assumePrimerWhenBare": true,
     "minTempC": 5,
-    "maxRH": 80
+    "maxRH": 80,
+    "ventilationRequired": true
+  },
+  "surfacePrep": {
+    "new-plaster": "Allow to dry completely (4-6 weeks). Apply mist coat (paint diluted 10-20% with water) or use appropriate primer.",
+    "previously-painted": "Clean, sand lightly if glossy, fill any holes/cracks, wipe clean.",
+    "bare-wood": "Sand smooth, remove dust, apply wood primer (Otex Akva) or undercoat.",
+    "metal": "Remove rust, degrease, apply anti-corrosive primer (Rostex Super).",
+    "tiles": "Clean and degrease thoroughly. Use adhesion primer (Otex Akva)."
+  },
+  "issueMapping": {
+    "moisture": ["Luja [20]", "Luja Universal Primer"],
+    "mould": ["Luja [20]", "Luja Universal Primer"],
+    "durability": ["Optiva Satin [5]", "Helmi [30]"],
+    "washability": ["Optiva Satin [5]", "Optiva Matt [3]"],
+    "stains": ["Optiva Satin [5]"],
+    "coverage": ["Anti-Reflex White [2]", "Optiva Matt [3]"],
+    "low-odour": ["Harmony Interior", "Helmi [30]"],
+    "eco-friendly": ["Harmony Interior"]
   }
 }

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikkurila Decorating Assistant - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .demo-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .demo-section h2 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .demo-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #1e40af;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .btn.secondary {
+            background: #6b7280;
+        }
+
+        .btn.secondary:hover {
+            background: #9ca3af;
+        }
+
+        .btn.danger {
+            background: #ef4444;
+        }
+
+        .btn.danger:hover {
+            background: #f87171;
+        }
+
+        .code-block {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+            margin: 0;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .code-block code {
+            color: #2d3748;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .feature-card h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .integration-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .integration-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .integration-card h3 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .status {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+        }
+
+        .status.info {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .demo-controls {
+                flex-direction: column;
+            }
+
+            .integration-examples {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Tikkurila Decorating Assistant</h1>
+            <p>AI-powered decorating advice and product recommendations</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>Live Demo</h2>
+            <p>Try out the Tikkurila Decorating Assistant! Ask questions about your painting projects, get product recommendations, and receive expert decorating advice.</p>
+            
+            <div class="demo-controls">
+                <button class="btn" onclick="openAssistant()">Open Assistant</button>
+                <button class="btn secondary" onclick="resetAssistant()">Reset Conversation</button>
+                <button class="btn secondary" onclick="testQuestions()">Test Questions</button>
+                <button class="btn danger" onclick="closeAssistant()">Close Assistant</button>
+            </div>
+
+            <div id="status"></div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🎯 Smart Recommendations</h3>
+                    <p>Get personalized paint recommendations based on your room, surface type, and specific requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💬 Natural Conversation</h3>
+                    <p>Chat naturally about your decorating needs. The assistant understands context and remembers your project details.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔧 Problem Solving</h3>
+                    <p>Get expert advice on common painting problems like mould, peeling, roller marks, and coverage issues.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Mobile Friendly</h3>
+                    <p>Fully responsive design that works perfectly on desktop, tablet, and mobile devices.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Product Knowledge</h3>
+                    <p>Access to comprehensive Tikkurila product database with detailed specifications and application advice.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Easy Integration</h3>
+                    <p>Simple one-line integration that can be added to any website with minimal configuration.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Integration Examples</h2>
+            <div class="integration-examples">
+                <div class="integration-card">
+                    <h3>Basic Integration</h3>
+                    <p>Add the assistant to your website with a single script tag:</p>
+                    <div class="code-block">
+                        <pre><code>&lt;script src="https://your-domain.com/src/embed.mjs"&gt;&lt;/script&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="integration-card">
+                    <h3>Custom Configuration</h3>
+                    <p>Customize the assistant with your own settings:</p>
+                    <div class="code-block">
+                        <pre><code>&lt;script src="https://your-domain.com/src/embed.mjs"
+        data-base-url="https://your-domain.com"
+        data-primary-color="#1e40af"
+        data-position="bottom-left"&gt;&lt;/script&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="integration-card">
+                    <h3>Programmatic Control</h3>
+                    <p>Control the assistant with JavaScript:</p>
+                    <div class="code-block">
+                        <pre><code>// Initialize
+const assistant = await TikkurilaAssistant.init({
+  baseUrl: 'https://your-domain.com',
+  primaryColor: '#1e40af'
+});
+
+// Control
+assistant.open();
+assistant.close();
+assistant.reset();</code></pre>
+                    </div>
+                </div>
+
+                <div class="integration-card">
+                    <h3>Multiple Instances</h3>
+                    <p>Create multiple assistants for different sections:</p>
+                    <div class="code-block">
+                        <pre><code>// Interior paint assistant
+const interior = await TikkurilaAssistant.init({
+  theme: 'interior'
+});
+
+// Exterior paint assistant  
+const exterior = await TikkurilaAssistant.init({
+  theme: 'exterior'
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Configuration Options</h2>
+            <div class="code-block">
+                <pre><code>{
+  "baseUrl": "https://your-domain.com",     // Base URL for API calls
+  "theme": "light",                         // light | dark
+  "position": "bottom-right",               // bottom-right | bottom-left | top-right | top-left
+  "primaryColor": "#1e40af",               // Primary brand color
+  "accentColor": "#3b82f6",                // Accent color
+  "autoLoad": true,                        // Auto-initialize on page load
+  "debug": false                           // Enable debug logging
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>API Reference</h2>
+            <div class="code-block">
+                <pre><code>// Initialize assistant
+TikkurilaAssistant.init(options)
+
+// Get instance
+TikkurilaAssistant.getInstance(id)
+
+// Destroy instance
+TikkurilaAssistant.destroy(id)
+
+// Destroy all instances
+TikkurilaAssistant.destroyAll()
+
+// Instance methods
+assistant.open()        // Open chat
+assistant.close()       // Close chat
+assistant.reset()       // Reset conversation</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { TikkurilaChatInterface } from '../src/chat-interface.mjs';
+        import { KB } from '../src/kb-loader.mjs';
+
+        let assistant = null;
+        const statusEl = document.getElementById('status');
+
+        function showStatus(message, type = 'info') {
+            statusEl.innerHTML = `<div class="status ${type}">${message}</div>`;
+            setTimeout(() => {
+                statusEl.innerHTML = '';
+            }, 5000);
+        }
+
+        async function openAssistant() {
+            try {
+                if (!assistant) {
+                    const container = document.createElement('div');
+                    document.body.appendChild(container);
+                    
+                    const kb = new KB(window.location.origin);
+                    assistant = new TikkurilaChatInterface(container, {
+                        baseUrl: window.location.origin,
+                        primaryColor: '#1e40af',
+                        accentColor: '#3b82f6'
+                    });
+                }
+                
+                assistant.open();
+                showStatus('Assistant opened successfully!', 'success');
+            } catch (error) {
+                console.error('Error opening assistant:', error);
+                showStatus('Error opening assistant: ' + error.message, 'error');
+            }
+        }
+
+        function closeAssistant() {
+            if (assistant) {
+                assistant.close();
+                showStatus('Assistant closed', 'info');
+            } else {
+                showStatus('No assistant instance found', 'error');
+            }
+        }
+
+        function resetAssistant() {
+            if (assistant) {
+                assistant.reset();
+                showStatus('Conversation reset', 'info');
+            } else {
+                showStatus('No assistant instance found', 'error');
+            }
+        }
+
+        async function testQuestions() {
+            const questions = [
+                "I'm painting my bathroom and have mould issues",
+                "What paint should I use on my ceiling?",
+                "I need help with roller marks",
+                "What's the best paint for a kitchen?",
+                "I'm a beginner, what do I need to know?"
+            ];
+
+            if (assistant) {
+                for (let i = 0; i < questions.length; i++) {
+                    setTimeout(() => {
+                        assistant.sendMessage(questions[i]);
+                    }, i * 2000);
+                }
+                showStatus('Test questions sent!', 'success');
+            } else {
+                showStatus('Please open the assistant first', 'error');
+            }
+        }
+
+        // Make functions global
+        window.openAssistant = openAssistant;
+        window.closeAssistant = closeAssistant;
+        window.resetAssistant = resetAssistant;
+        window.testQuestions = testQuestions;
+    </script>
+</body>
+</html>

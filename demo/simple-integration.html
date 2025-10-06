@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikkurila Assistant - Simple Integration</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+        
+        .integration-code {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .integration-code pre {
+            margin: 0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .btn {
+            background: #1e40af;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        
+        .btn:hover {
+            background: #3b82f6;
+        }
+        
+        .status {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+        
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Tikkurila Decorating Assistant</h1>
+        <p>This page demonstrates how easy it is to integrate the Tikkurila Decorating Assistant into any website.</p>
+        
+        <h2>Integration Code</h2>
+        <p>To add the assistant to your website, simply include this script tag:</p>
+        
+        <div class="integration-code">
+            <pre><code>&lt;script type="module"&gt;
+  import { TikkurilaChatInterface } from './src/chat-interface.mjs';
+  import { KB } from './src/kb-loader.mjs';
+  
+  // Initialize the assistant
+  const container = document.createElement('div');
+  document.body.appendChild(container);
+  
+  const kb = new KB(window.location.origin);
+  const assistant = new TikkurilaChatInterface(container, {
+    baseUrl: window.location.origin,
+    primaryColor: '#1e40af',
+    accentColor: '#3b82f6'
+  });
+&lt;/script&gt;</code></pre>
+        </div>
+        
+        <h2>Test the Assistant</h2>
+        <p>Click the button below to open the Tikkurila Decorating Assistant and try asking questions like:</p>
+        <ul>
+            <li>"I'm painting my bathroom and have mould issues"</li>
+            <li>"What paint should I use on my ceiling?"</li>
+            <li>"I need help with roller marks"</li>
+            <li>"What's the best paint for a kitchen?"</li>
+        </ul>
+        
+        <button class="btn" onclick="openAssistant()">Open Assistant</button>
+        <button class="btn" onclick="closeAssistant()">Close Assistant</button>
+        <button class="btn" onclick="resetAssistant()">Reset Conversation</button>
+        
+        <div id="status"></div>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>✅ Natural language conversation</li>
+            <li>✅ Product recommendations based on room and requirements</li>
+            <li>✅ Problem-solving for common painting issues</li>
+            <li>✅ Mobile-responsive design</li>
+            <li>✅ Easy integration with any website</li>
+            <li>✅ Customizable appearance and behavior</li>
+        </ul>
+    </div>
+
+    <script type="module">
+        import { TikkurilaChatInterface } from '../src/chat-interface.mjs';
+        import { KB } from '../src/kb-loader.mjs';
+
+        let assistant = null;
+        const statusEl = document.getElementById('status');
+
+        function showStatus(message, type = 'success') {
+            statusEl.innerHTML = `<div class="status ${type}">${message}</div>`;
+            setTimeout(() => {
+                statusEl.innerHTML = '';
+            }, 3000);
+        }
+
+        async function openAssistant() {
+            try {
+                if (!assistant) {
+                    const container = document.createElement('div');
+                    document.body.appendChild(container);
+                    
+                    const kb = new KB(window.location.origin);
+                    assistant = new TikkurilaChatInterface(container, {
+                        baseUrl: window.location.origin,
+                        primaryColor: '#1e40af',
+                        accentColor: '#3b82f6'
+                    });
+                }
+                
+                assistant.open();
+                showStatus('Assistant opened! Try asking about your decorating project.', 'success');
+            } catch (error) {
+                console.error('Error opening assistant:', error);
+                showStatus('Error opening assistant: ' + error.message, 'error');
+            }
+        }
+
+        function closeAssistant() {
+            if (assistant) {
+                assistant.close();
+                showStatus('Assistant closed', 'success');
+            } else {
+                showStatus('No assistant instance found', 'error');
+            }
+        }
+
+        function resetAssistant() {
+            if (assistant) {
+                assistant.reset();
+                showStatus('Conversation reset', 'success');
+            } else {
+                showStatus('No assistant instance found', 'error');
+            }
+        }
+
+        // Make functions global
+        window.openAssistant = openAssistant;
+        window.closeAssistant = closeAssistant;
+        window.resetAssistant = resetAssistant;
+    </script>
+</body>
+</html>

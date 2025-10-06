@@ -1,0 +1,20 @@
+{
+  "name": "tikkurila-ai-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered decorating assistant for Tikkurila products",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "http-server dist -p 3000"
+  },
+  "dependencies": {
+    "openai": "^4.20.1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "http-server": "^14.1.1"
+  },
+  "type": "module"
+}

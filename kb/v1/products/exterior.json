@@ -1,3 +1,216 @@
 {
-  "products": []
+  "products": [
+    {
+      "sku": "",
+      "name": "Valtti Opaque",
+      "category": "Exterior Wood Opaque Paint",
+      "type": "wood paint",
+      "finish": "",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "opaque", "weather-resistant"],
+      "description": "Opaque exterior wood paint that completely covers the wood grain for maximum protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-opaque",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9892/product/2018/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9865/product/2018/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9853/product/2018/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Ultra Classic",
+      "category": "Exterior Wood Semi-Transparent",
+      "type": "wood stain",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "translucent", "grain-showing"],
+      "description": "Translucent exterior wood stain that shows the natural wood grain while providing protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/ultra-classic",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9849/product/2140/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9888/product/2140/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Akvacolor",
+      "category": "Exterior Wood Semi-Transparent",
+      "type": "wood stain",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "translucent", "water-based"],
+      "description": "Water-based translucent exterior wood stain for natural wood protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-akvacolor",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9473/product/1971/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/7895/product/1971/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/8732/product/1971/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Color",
+      "category": "Exterior Wood Semi-Transparent",
+      "type": "wood stain (solvent-borne)",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "translucent", "solvent-based"],
+      "description": "Solvent-based translucent exterior wood stain for traditional wood protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-color",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9704/product/1955/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9369/product/1955/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9694/product/1955/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9377/product/1955/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Plus Kesto",
+      "category": "Exterior Wood Semi-Transparent",
+      "type": "durable wood stain",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "translucent", "durable", "long-lasting"],
+      "description": "Durable translucent exterior wood stain with enhanced longevity and protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-plus-kesto",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9696/product/1932/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9370/product/1932/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9703/product/1932/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/7573/product/1932/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Arctic",
+      "category": "Exterior Wood Semi-Transparent",
+      "type": "decorative wood stain",
+      "finish": "translucent/pearlescent",
+      "rooms": ["exterior", "garden", "shed", "fence"],
+      "surfaces": ["wood", "exterior-wood", "fence", "shed"],
+      "issues": ["exterior", "decorative", "pearlescent", "special-effect"],
+      "description": "Decorative exterior wood stain with pearlescent finish for special effects.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-arctic",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/7838/product/2062/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9447/product/2062/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9527/product/2062/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Wood Oil Akva (Puuöljy Akva)",
+      "category": "Exterior Wood Oil",
+      "type": "waterborne oil",
+      "finish": "natural",
+      "rooms": ["exterior", "garden", "decking"],
+      "surfaces": ["wood", "exterior-wood", "decking", "fence"],
+      "issues": ["exterior", "oil", "water-based", "natural"],
+      "description": "Water-based exterior wood oil for natural wood protection and enhancement.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/wood-oil-akva-puuoljy-akva",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9717/product/2014/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9402/product/2014/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/8789/product/2014/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Wood Oil (Puuöljy)",
+      "category": "Exterior Wood Oil",
+      "type": "solvent-borne oil",
+      "finish": "natural",
+      "rooms": ["exterior", "garden", "decking"],
+      "surfaces": ["wood", "exterior-wood", "decking", "fence"],
+      "issues": ["exterior", "oil", "solvent-based", "natural"],
+      "description": "Traditional solvent-based exterior wood oil for natural wood protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/wood-oil-puuoljy",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/8459/product/2214/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9467/product/2214/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9523/product/2214/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Plus Terrace Oil",
+      "category": "Decking Oil",
+      "type": "exterior wood oil",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "decking"],
+      "surfaces": ["wood", "decking", "terrace"],
+      "issues": ["exterior", "decking", "terrace", "oil"],
+      "description": "Specialized exterior wood oil for decking and terrace areas.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-plus-terrace-oil",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9719/product/2124/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9566/product/2124/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/8661/product/2124/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9720/product/2124/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    },
+    {
+      "sku": "",
+      "name": "Valtti Bio Terrace Oil",
+      "category": "Decking Oil",
+      "type": "bio-based exterior oil",
+      "finish": "translucent",
+      "rooms": ["exterior", "garden", "decking"],
+      "surfaces": ["wood", "decking", "terrace"],
+      "issues": ["exterior", "decking", "bio-based", "eco-friendly"],
+      "description": "Bio-based exterior wood oil for eco-friendly decking protection.",
+      "links": {
+        "pdp": "https://www.tikkurila.co.uk/valtti-bio-terrace-oil",
+        "pdfs": [
+          "https://www.tikkurila.co.uk/amfile/file/download/file/9529/product/2444/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/7826/product/2444/",
+          "https://www.tikkurila.co.uk/amfile/file/download/file/8781/product/2444/"
+        ]
+      },
+      "version": "2025-10-01",
+      "lastUpdated": "2025-10-01"
+    }
+  ]
 }
